@@ -1,0 +1,34 @@
+body {
+  background-image: url('../img/background.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+h1{
+  margin-top: -25px;
+  margin-bottom: 5px;
+  font-family: 'Dosis', sans-serif;
+}
+
+
+hr {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+#autor_post {
+  text-align: right;
+}
+
+.jumbotron{
+  -webkit-box-shadow: 0px 0px 12px 7px rgba(158,155,158,1);
+  -moz-box-shadow: 0px 0px 12px 7px rgba(158,155,158,1);
+  box-shadow: 0px 0px 12px 7px rgba(158,155,158,1);
+}
+
+#tytul_strony {
+  margin-bottom: -30px;
+  text-align: center;
+}

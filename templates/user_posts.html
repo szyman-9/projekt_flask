@@ -1,0 +1,18 @@
+{% extends "posty_base.html" %}
+{% block contents %}
+    <section class="jumbotron">
+            <div class=”container”>
+                <h1 id="tytul_strony">{{ username }}</h1>
+            </div>
+    </section>
+    {% for post in rekordy %}
+    <section class="jumbotron">
+            <div class=”container”>
+                <h1>{{ post['tytul'] }}</h1>
+                <hr>
+                <p style="text-align: justify">{{ post['tresc'] }}</p>
+            </div>
+    </section>
+    {% endfor %}
+
+{% endblock %}

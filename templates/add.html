@@ -1,0 +1,13 @@
+{% extends "vase.html" %}
+{% block content %}
+<h1>Dodaj post</h1>
+        <form action = "{{ url_for('addrec') }}" method = "POST">
+            Tytuł<br>
+            <input class="form-control" type = "text" placeholder="Tytuł" name = "tytul" style="width: 100%"/> <br>
+
+            Treść<br>
+            <textarea class="form-control" placeholder="Tutaj wpisz treść..." name = "tresc" rows=18 style="width: 100%"></textarea><br>
+
+            <input class="btn btn-secondary btn-lg btn-block" type = "submit" value = "Zapisz"/>
+        </form>
+{% endblock %}

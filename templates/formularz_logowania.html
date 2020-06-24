@@ -1,0 +1,10 @@
+{% extends "vase.html" %}
+{% block content %}
+<p class="lead">Podaj login oraz hasło</p>
+    <form action="{{ url_for('login') }}" method="post">
+        <p><input class="form-control" placeholder="Login" type="text" name="username"></p>
+        <p><input class="form-control" placeholder="Hasło" type="password" name="password"></p>
+        <p><input class="btn btn-secondary btn-lg btn-block" type="submit" value="Zaloguj" </p>
+    </form>
+
+{% endblock %}

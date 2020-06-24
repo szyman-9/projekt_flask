@@ -1,0 +1,14 @@
+{% extends "posty_base.html" %}
+{% block contents %}
+{% for post in rekordy %}
+        <section class="jumbotron">
+            <div class=”container”>
+                <h1 id="tytul_post">{{ post['tytul'] }}</h1>
+                <p id="autor_post"><i>Autor: <a href={{ url_for('show_user_posts', username=post['autor'])}}> {{ post['autor'] }} </a></i></p>
+                <hr>
+                <p style="text-align: justify">{{ post['tresc'] }}</p>
+
+            </div>
+        </section>
+{% endfor %}
+{% endblock %}
